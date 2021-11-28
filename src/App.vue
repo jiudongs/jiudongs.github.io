@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <jd-guider></jd-guider>
+    <jd-main msg="Welcome to jiudongs's school"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import JDMain from './components/main.vue'
+import JDGuider from './components/guider.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    "jd-main":JDMain,
+    "jd-guider":JDGuider
   }
 }
 </script>
